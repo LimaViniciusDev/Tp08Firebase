@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema principal da aplicação -->
+    <style name="Base.Theme.Tp07Firebase" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#4F46E5</item>
+        <item name="colorPrimaryVariant">#3730A3</item>
+        <item name="android:statusBarColor">#4F46E5</item>
+    </style>
+
+    <style name="Theme.Tp07Firebase" parent="Base.Theme.Tp07Firebase" />
+
+    <!-- Tema corrigido para o FirebaseUI não cortar o campo de E-mail no Android 15/16 -->
+    <style name="Theme.FirebaseUI.Custom" parent="FirebaseUI">
+        <item name="colorPrimary">#4F46E5</item>
+        <item name="colorPrimaryDark">#3730A3</item>
+        <item name="colorAccent">#4F46E5</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement" tools:targetApi="35">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+</resources>
